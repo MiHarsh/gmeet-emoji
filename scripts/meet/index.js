@@ -67,6 +67,14 @@ request.onreadystatechange = function () {
                         ).style.display = "none";
                       }
                     });
+
+                  // close the emoji-pallet when clicked anywhere else in the meeting box
+                  document
+                    .getElementsByClassName("z38b6")[0]
+                    .addEventListener("click", () => {
+                      document.getElementById("emoji-container").style.display =
+                        "none";
+                    });
                 }
               }, 1000);
             }
