@@ -1,0 +1,13 @@
+{
+  "appName": {
+    "message": "Custom Chat",
+    "description": "The title of the application, displayed in the web store."
+  },
+  "appDesc": {
+    "message": "enhance user experience of chat",
+    "description": "The description of the application, displayed in the web store."
+  },
+  "default": {
+    "message": "Default"
+  }
+}

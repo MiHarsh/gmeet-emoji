@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "version": "1.0.0",
+  "name": "Gmeet Custom Chat",
+  "short_name": "gmeet-chat",
+  "description": "enhance user experience of gmeet-chat",
+  "default_locale": "en",
+
+  "options_page": "",
+  "browser_action": {
+    "default_icon": "assets/icon/48.png",
+    "default_title": "gmeet chat",
+    "default_popup": "scripts/popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["scripts/meet/index.js"],
+      "css": ["scripts/styles.css"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+
+  "web_accessible_resources": ["scripts/emojis.json"],
+  "permissions": ["tabs", "notifications", "storage", "contextMenus"],
+  "icons": {
+    "36": "assets/icon/36.png",
+    "48": "assets/icon/48.png",
+    "72": "assets/icon/72.png",
+    "96": "assets/icon/96.png"
+  }
+}

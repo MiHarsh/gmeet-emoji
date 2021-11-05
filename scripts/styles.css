@@ -1,0 +1,99 @@
+body {
+  background-color: black;
+}
+
+.emoji-container {
+  flex-direction: row;
+  height: 350px;
+  width: 270px;
+  border-radius: 2%;
+  background-color: antiquewhite;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  position: absolute;
+  bottom: 70px;
+}
+
+.emoticon-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  height: 80%;
+  padding: 7px;
+}
+
+.grid {
+  height: 30px;
+  width: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  width: 100%;
+  overflow: auto;
+}
+
+li {
+  float: left;
+  padding: 0px 10px;
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 5px 0px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+li:hover {
+  background-color: #111;
+  cursor: pointer;
+}
+
+.oIy2qc {
+  color: #345252 !important;
+  font-size: 17px !important;
+  padding-top: 3px !important;
+}
+
+.YTbUzc {
+  font-size: 17px !important;
+  padding-bottom: 10px !important;
+}
+
+.open-chat {
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #909497;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.popup {
+  height: 338px;
+  width: 250px;
+
+  background-color: antiquewhite;
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emoji-container-popup {
+  height: 350px;
+  width: 270px;
+  padding: 10px;
+  position: absolute;
+}
