@@ -7,11 +7,11 @@
 
 ## Table of Contents 📕
 
-* [About](#bdaywisher-1)
-* [Installation](#)
+* [About](#gmeet-emoji)
+* [Installation](#installation-)
 * [Features](#features-)
-  	* [Meet-chat experience](#1-more-secured-events)
-  	* [Easy Copy pasting](#2-scheduling)
+  	* [Meet-chat experience](#1-improved-meet-chat-experience)
+  	* [Easy Copy pasting](#2-copy-pasting)
 * [Future Work](#future-work)
 * [Contributions](#contributions)
 
