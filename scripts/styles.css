@@ -1,7 +1,3 @@
-body {
-  background-color: black;
-}
-
 .emoji-container {
   flex-direction: row;
   height: 350px;
@@ -34,7 +30,7 @@ body {
   cursor: pointer;
 }
 
-ul {
+#navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -44,7 +40,7 @@ ul {
   overflow: auto;
 }
 
-li {
+.em-nav {
   float: left;
   padding: 0px 10px;
   display: block;
@@ -55,7 +51,7 @@ li {
   font-size: 17px;
 }
 
-li:hover {
+.em-nav:hover {
   background-color: #111;
   cursor: pointer;
 }
