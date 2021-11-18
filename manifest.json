@@ -23,7 +23,6 @@
   ],
 
   "web_accessible_resources": ["scripts/emojis.json"],
-  "permissions": ["tabs", "notifications", "storage", "contextMenus"],
   "icons": {
     "36": "assets/icon/36.png",
     "48": "assets/icon/48.png",
