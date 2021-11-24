@@ -3,8 +3,8 @@
   height: 350px;
   width: 270px;
   border-radius: 2%;
-  background-color: antiquewhite;
-  padding: 10px;
+  border: 1px solid rgb(203, 205, 209);
+  background-color: white;
   flex-wrap: wrap;
   flex-basis: 100%;
   position: absolute;
@@ -16,8 +16,8 @@
   flex-direction: row;
   flex-wrap: wrap;
   overflow-y: scroll;
-  height: 80%;
-  padding: 7px;
+  height: calc(100% - 109px);
+  padding: 10px;
 }
 
 .grid {
@@ -27,32 +27,49 @@
   justify-content: center;
   display: flex;
   font-size: 22px;
-  cursor: pointer;
+  cursor: copy;
+}
+
+.navbar-container {
+  margin: 0px auto;
+  width: fit-content;
 }
 
 #navbar {
   list-style-type: none;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  padding: 3px;
+  background-color: rgb(241, 243, 244);
+  border-bottom: 1px solid rgb(203, 205, 209); 
   width: 100%;
-  overflow: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .em-nav {
-  float: left;
-  padding: 0px 10px;
+  padding: 3px 4px 3px 8px;
   display: block;
   color: white;
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
   text-align: center;
-  margin: 5px 0px;
+  margin: 3px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 12px;
+  border: 1px solid rgb(203, 205, 209);
+  background-color: rgb(241, 243, 244);
+}
+
+.em-nav.active {
+  border: 1px solid rgb(203, 205, 209);
+  background-color: rgb(203, 205, 209);
 }
 
 .em-nav:hover {
-  background-color: #111;
+  background-color: rgb(203, 205, 209);
   cursor: pointer;
 }
 
@@ -70,9 +87,23 @@
 .open-chat {
   font-size: 20px;
   cursor: pointer;
-  border: 2px solid #909497;
+  border: 1px solid rgb(241, 243, 244);;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0px 1px 3px 4px;
   margin-left: 10px;
   border-radius: 50%;
+  background-color: rgb(241, 243, 244);
+}
+
+.open-chat:hover{
+  border: 1px solid rgb(203, 205, 209);
+  background-color: rgb(203, 205, 209);
+}
+
+.open-chat.active {
+  background-color: rgb(203, 205, 209);
 }
 
 .popup {
