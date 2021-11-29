@@ -38,6 +38,7 @@ request.onreadystatechange = function () {
                   let newItem = document.createElement("div");
                   let container = createContainer();
                   newItem.className = "open-chat";
+                  newItem.id = "open-chat";
                   newItem.innerText = "😄";
                   box.insertBefore(newItem, box.childNodes[0]);
                   box.insertBefore(container, box.childNodes[0]);
@@ -115,7 +116,15 @@ function createContainer() {
 function createGrid() {
   document
     .getElementsByClassName("open-chat")[0]
-    .addEventListener("click", () => {
+    .addEventListener("click", (e) => {
+      const openChat = document.getElementById(e.target.id);
+
+      if (openChat.classList.contains("active")) {
+        openChat.classList.remove("active");
+      } else {
+        openChat.classList.add("active");
+      }
+
       let cont = document.getElementById("emoji-container");
 
       if (cont.style.display !== "none") {
@@ -154,12 +163,23 @@ function createGrid() {
     let newElement = document.createElement("li");
     newElement.innerHTML = emojis[Object.keys(emojis)[i]][0];
     newElement.id = Object.keys(emojis)[i];
-    newElement.className = "em-nav";
+    newElement.classList.add("em-nav");
+    if (i === 0) {newElement.classList.add("active");}
 
     document.getElementById("navbar").appendChild(newElement);
 
     // re render with new emozi
     newElement.addEventListener("click", (e) => {
+
+      const navs = [...document.getElementsByClassName("em-nav")];
+      navs.forEach(nav => {
+        if (nav.classList.contains("active")) {
+          nav.classList.remove("active")
+        } else if (nav.id === e.target.id) {
+          nav.classList.add("active")
+        }
+      });
+
       document.getElementById("emoticon-div").innerHTML = "";
 
       for (let i = 0; i < emojis[e.target.id].length; i++) {

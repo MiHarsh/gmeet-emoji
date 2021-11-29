@@ -3,8 +3,8 @@
   height: 350px;
   width: 270px;
   border-radius: 2%;
-  background-color: antiquewhite;
-  padding: 10px;
+  border: 1px solid rgb(203, 205, 209);
+  background-color: white;
   flex-wrap: wrap;
   flex-basis: 100%;
   position: absolute;
@@ -16,8 +16,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   overflow-y: scroll;
-  height: 80%;
-  padding: 7px;
+  height: calc(100% - 119px);
+  padding: 10px 15px;
+  width: auto;
+  margin: 0px auto;
 }
 
 .grid {
@@ -27,32 +29,50 @@
   justify-content: center;
   display: flex;
   font-size: 22px;
-  cursor: pointer;
+  cursor: copy;
+}
+
+.navbar-container {
+  margin: 0px auto;
+  width: fit-content;
 }
 
 #navbar {
   list-style-type: none;
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+  padding: 3px;
+  background-color: rgb(241, 243, 244);
+  border-bottom: 1px solid rgb(203, 205, 209); 
   width: 100%;
-  overflow: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .em-nav {
-  float: left;
-  padding: 0px 10px;
+  padding: 3px 4px 3px 8px;
   display: block;
   color: white;
+  box-sizing: border-box;
+  flex-grow: 0;
+  flex-shrink: 0;
   text-align: center;
-  margin: 5px 0px;
+  margin: 3px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 12px;
+  border: 1px solid rgb(203, 205, 209);
+  background-color: rgb(241, 243, 244);
+}
+
+.em-nav.active {
+  border: 1px solid rgb(203, 205, 209);
+  background-color: rgb(203, 205, 209);
 }
 
 .em-nav:hover {
-  background-color: #111;
+  background-color: rgb(203, 205, 209);
   cursor: pointer;
 }
 
@@ -70,26 +90,52 @@
 .open-chat {
   font-size: 20px;
   cursor: pointer;
-  border: 2px solid #909497;
+  border: 1px solid rgb(241, 243, 244);;
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+  padding: 0px 1px 3px 4px;
   margin-left: 10px;
   border-radius: 50%;
+  background-color: rgb(241, 243, 244);
+}
+
+.open-chat:hover{
+  border: 1px solid rgb(203, 205, 209);
+  background-color: rgb(203, 205, 209);
+}
+
+.open-chat.active {
+  background-color: rgb(203, 205, 209);
 }
 
 .popup {
   height: 338px;
-  width: 250px;
-
-  background-color: antiquewhite;
-  padding: 10px;
-
+  width: 270px;
+  background-color: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0px;
 }
 
 .emoji-container-popup {
   height: 350px;
   width: 270px;
-  padding: 10px;
+  top: 0px;
   position: absolute;
+  background-color: white;
+  border: none;
+  flex-wrap: wrap;
+  flex-basis: 100%;
+  flex-direction: row;
+}
+
+.emoji-container-popup .em-nav {
+  padding-right: 8px;
+  padding-bottom: 4px;
+  padding-top: 2px;
+  width: 35px;
+  height: 35px;
+  box-sizing: border-box;
 }
