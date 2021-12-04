@@ -1,11 +1,11 @@
 {
   "appName": {
-    "message": "Custom Chat",
-    "description": "The title of the application, displayed in the web store."
+    "message": "Gmeet Custom Chat",
+    "description": "Add more fun to Google Meet by inserting Emojis into your chats."
   },
   "appDesc": {
     "message": "enhance user experience of chat",
-    "description": "The description of the application, displayed in the web store."
+    "description": "interactive, tools, online, video, conferencing"
   },
   "default": {
     "message": "Default"
