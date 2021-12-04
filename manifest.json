@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "name": "Gmeet Custom Chat",
   "short_name": "gmeet-chat",
-  "description": "enhance user experience of gmeet-chat",
+  "description": "Interactive tool for online Google Meet video conferencing.",
   "default_locale": "en",
 
   "options_page": "",
@@ -23,6 +23,7 @@
   ],
 
   "web_accessible_resources": ["scripts/emojis.json"],
+  "permissions": [],
   "icons": {
     "36": "assets/icon/36.png",
     "48": "assets/icon/48.png",
