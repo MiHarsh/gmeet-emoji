@@ -24,7 +24,7 @@ This extension allows integration of emojis super-easily.
 
 - Clone this repository
 	```bash
-	git clone https://github.com/MiHarsh/gmeet-emoji.git
+	git clone https://github.com/inglesuniversal/gmeet-emoji.git
 	```
 - Go to chrome browser > ⋮ > More tools > Extensions
 - Make sure to be with `developer` mode on.
@@ -59,3 +59,10 @@ No worries, the source code is public. Feel free to play around with different c
 Contributions are welcome ❤️. For major changes, please open an issue first to discuss what you would like to change.
 
 Do Give a **Star** if you like it ❤️
+	
+
+Awesome source code by: @MiHarsh
+	
+https://github.com/MiHarsh/gmeet-emoji.git
+	
+
